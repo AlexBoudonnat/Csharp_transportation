@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransportCommun", "TransportCommun\TransportCommun.csproj", "{3F12D8D4-0B0A-4127-B3E5-1E16D3AE58BC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CBC7E10D-83E3-4537-A0A3-C5ACDEB5DF70} = {CBC7E10D-83E3-4537-A0A3-C5ACDEB5DF70}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiLibrary", "ApiLibrary\ApiLibrary.csproj", "{CBC7E10D-83E3-4537-A0A3-C5ACDEB5DF70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F12D8D4-0B0A-4127-B3E5-1E16D3AE58BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F12D8D4-0B0A-4127-B3E5-1E16D3AE58BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F12D8D4-0B0A-4127-B3E5-1E16D3AE58BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F12D8D4-0B0A-4127-B3E5-1E16D3AE58BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBC7E10D-83E3-4537-A0A3-C5ACDEB5DF70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBC7E10D-83E3-4537-A0A3-C5ACDEB5DF70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBC7E10D-83E3-4537-A0A3-C5ACDEB5DF70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBC7E10D-83E3-4537-A0A3-C5ACDEB5DF70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9E0DE5A-3820-42DE-81C8-DCAC6B5E72B0}
+	EndGlobalSection
+EndGlobal
