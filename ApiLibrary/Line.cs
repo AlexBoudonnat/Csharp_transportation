@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TransportCommun
+namespace ApiLibrary
 {
-    class Line
+    public class Line
     {
         public string id { get; set; }
         public string shortName { get; set; }

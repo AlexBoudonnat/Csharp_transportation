@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TransportCommun
+namespace ApiLibrary
 {
-    class BusStop
+    public class BusStop
     {
         public string name { get; set; }
         public double lon { get; set; }
