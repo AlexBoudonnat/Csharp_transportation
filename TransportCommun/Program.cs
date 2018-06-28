@@ -23,7 +23,7 @@ namespace TransportCommun
             List<BusStop> busStops = JsonConvert.DeserializeObject<List<BusStop>>(stopsApi.getResponse());
 
             // Prepare a list of lines to get infos
-            List<Line> lineInfos;
+            List<BusLine> lineInfos;
 
             // Nouvelle liste d'objet BusStop sans les doublons
             List<BusStop> busStopsWithoutDoubles = busStops.GroupBy(busStop => busStop.name).Select(x => x.First()).ToList();
@@ -49,7 +49,7 @@ namespace TransportCommun
                 foreach (string line in busStop.lines)
                 {
                     lineApi = new Api("http://data.metromobilite.fr/api/routers/default/index/routes?codes=" + line);
-                    lineInfos = JsonConvert.DeserializeObject<List<Line>>(lineApi.getResponse());
+                    lineInfos = JsonConvert.DeserializeObject<List<BusLine>>(lineApi.getResponse());
 
                     //WriteLine($"{line} : {lineInfos.longName} - couleur : {lineInfos.color}"); //
                     WriteLine($"{line} : {lineInfos.First().longName} - couleur : {lineInfos.First().color}");

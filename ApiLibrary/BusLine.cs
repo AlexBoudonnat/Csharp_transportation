@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ApiLibrary
 {
-    public class Line
+    public class BusLine
     {
         public string id { get; set; }
         public string shortName { get; set; }
